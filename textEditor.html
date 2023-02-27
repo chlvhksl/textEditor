@@ -2,11 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/textEditor.css">
+    <script src="/textEditor.js"></script>
     <title>Document</title>
+    
 </head>
 <body>
-    
+    <div class="editor-menu">
+        <button id="btn-bold" onclick="btnBold()">
+            <b>B</b>
+        </button>
+        <button id="btn-italic" onclick="btnItalic()">
+            <i>I</i>
+        </button>        
+        <button id="btn-underline">
+            <u>U</u>
+        </button>               
+        <button id="btn-strike">
+            <s>S</s>
+        </button>   
+        <button id="btn-ordered-list">
+            OL
+        </button>                        
+        <button id="btn-unordered-list">
+            UL
+        </button>            
+
+    </div>
+    <div id="editor" contenteditable="true"> 
+
+    </div>
 </body>
+
 </html>
